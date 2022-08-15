@@ -4,6 +4,9 @@
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
+.container{
+    border-radius: 25px;
+}
 
 .hero{
     height: 100vh;
@@ -334,6 +337,13 @@ footer p:nth-child(2){
 
 @media screen and (max-width: 768px){
 
+    html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+        border-radius: 25px;
+        }
+
     .container{
         display: flex;
         flex-direction: column;
@@ -343,12 +353,9 @@ footer p:nth-child(2){
         display: grid;
        border-radius: 250px;
     }
-
-
-
+    
     h1{
-        font-size: 30px;
-        
+        font-size: 30px;   
     }
 
 .main{
@@ -367,12 +374,5 @@ footer p:nth-child(2){
     display: flex;
     flex-direction: column; 
 }
-
-.btn{
-    padding-right: 2rem;
-}
-
-
-
 
 }
