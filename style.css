@@ -340,8 +340,7 @@ footer p:nth-child(2){
     html,body {
         margin:0;
         padding:0;
-        overflow-x:hidden;
-        border-radius: 25px;
+        overflow-x: hidden;
         }
 
     .container{
@@ -351,7 +350,7 @@ footer p:nth-child(2){
 
     nav{
         display: grid;
-       border-radius: 250px;
+       
     }
     
     h1{
