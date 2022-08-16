@@ -1,3 +1,13 @@
+:root{
+    --bright-pink: #3DA08F;
+    --white-smoke:  #f5f5f5;
+    --card-color: #191919;
+}
+
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -26,14 +36,14 @@ nav{
 }
 
 .logo{
-    color: whitesmoke;
+    color: var(--white-smoke);
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
 
 span{
-    color: #f9004d;
+    color: var(--bright-pink);
 }
 
 nav ul li{
@@ -43,20 +53,20 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: var(--white-smoke);
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
 nav ul li a:hover{
-    color: #f9004d;
+    color: var(--bright-pink);
     transition: .4s;
 }
 
 .btn{
-    background-color: #f9004d;
-    color: white;
+    background-color: var(--bright-pink);
+    color: var(--white-smoke);
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -78,12 +88,12 @@ nav ul li a:hover{
 }
 
 h1{
-    color: white;
+    color: var(--white-smoke);
     margin: 20px 0 20px;
     font-size: 65px;
 }
 h3{
-    color: white;
+    color: var(--white-smoke);
     font-size: 25px;
     margin-bottom: 50px;
 }
@@ -102,7 +112,7 @@ h4{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
+    border: 2px solid var(--bright-pink);
     outline: none;
     border-radius: 30px;
 }
@@ -113,21 +123,22 @@ h4{
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #f9004d;
-    color: white;
+    background-color: var(--bright-pink);
+    color: var(--white-smoke);
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
     top: 6px;
     right: 6px;
 }
 .newsletter form input:last-child:hover{
-    color: #f9004d;
-    background-color: #f5f5f5;  
+    color: var(--bright-pink);
+    background-color: var(--white-smoke);  
 }
 
 .about{
     width: 100%;
-    padding: 100px 0px;
+    padding: 100px 100px;
     background-image: url(./images/photo.jpeg);
+    
 }
 .about img{
     height: auto;
@@ -149,13 +160,13 @@ h4{
 }
 
 .about-text h2{
-    color: #f5f5f5;
+    color: var(--white-smoke);
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 .about-text h5{
-    color: #f5f5f5;
+    color: var(--white-smoke);
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
@@ -170,8 +181,8 @@ h4{
 }
 
 button{
-    background-color: #f9004d;
-    color: #f5f5f5;
+    background-color: var(--bright-pink);
+    color: var(--white-smoke);
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -181,7 +192,7 @@ button{
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid var(--bright-pink);
     cursor: pointer;
 }
 
@@ -191,7 +202,7 @@ button:hover{
     padding: 100px 0px;
 }
 .title h2{
-    color: #f5f5f5;
+    color: var(--white-smoke);
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
@@ -207,7 +218,7 @@ button:hover{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: #191919;
+    background: var(--card-color);
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -219,24 +230,24 @@ button:hover{
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color: #f9004d;
+    color: var(--bright-pink);
 }
 
 h5{
-    color: #f5f5f5;
+    color: var(--white-smoke);
     font-size: 23px;
     margin-bottom: 15px;
 }
 .pra p{
-    color: #fcfc;
+    color: var(--white-smoke);
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
 
 .card .button{
-    background-color: #f9004d;
-    color: #f5f5f5;
+    background-color: var(--bright-pink);
+    color: var(--white-smoke);
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -246,7 +257,7 @@ h5{
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid var(--bright-pink);
     cursor: pointer;
 }
 
@@ -261,15 +272,15 @@ h5{
 }
 
 .contact-me p{
-    color: whitesmoke;
+    color: var(--white-smoke);
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
 .contact-me .button-two{
-    background-color: #f9004d;
-    color: #f5f5f5;
+    background-color: var(--bright-pink);
+    color: var(--white-smoke);
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -279,7 +290,7 @@ h5{
 }
 .contact-me .button-two:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid var(--bright-pink);
     cursor: pointer;
 }
 
@@ -295,12 +306,12 @@ footer{
 }
 footer p:nth-child(1){
     font-size: 30px;
-    color: whitesmoke;
+    color: var(--white-smoke);
     margin-bottom: 20px;
     font-weight: bold;
 }
 footer p:nth-child(2){
-    color: whitesmoke;
+    color: var(--white-smoke);
     font-size: 17px; 
     width: 500px;
     text-align: center;
@@ -316,10 +327,10 @@ footer p:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f9004d;
+    background: var(--bright-pink);
     border-radius: 50%;
     margin: 22px 10px;
-    color: #f5f5f5;
+    color: var(--white-smoke);
     text-decoration: none;
     font-size: 20px;
 }
@@ -330,7 +341,7 @@ footer p:nth-child(2){
 
 .end{
     position: absolute;
-    color: #f9004d;
+    color: var(--bright-pink);
     bottom: 35px;
     font-size: 14px;
 }
@@ -338,8 +349,8 @@ footer p:nth-child(2){
 @media screen and (max-width: 768px){
 
     html,body {
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         overflow-x: hidden;
         }
 
@@ -349,28 +360,28 @@ footer p:nth-child(2){
     }
 
     .hero{
-        width: 700px;
-        max-width: 700px;
-        min-height: 200px;
-        max-height: 700px;
+        width: 700px;       
+        background-image: url(./images/photo.jpeg);
+    }
+
+    .title h2{
+        font-size: 60px;
+    }
+
+    .about-text p{
+        font-size: 15px;
+       
     }
 
     .btn{
         text-align: center;
+        
     }
 
-    nav{
-        display: grid;
-       
-    }
-
-    .content{
-        margin-right: auto;
-    }
-    
     h1{
         font-size: 30px;   
     }
+
 
 .main{
     display: flex;
