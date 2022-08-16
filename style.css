@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 .container{
     border-radius: 25px;
@@ -348,9 +348,24 @@ footer p:nth-child(2){
         flex-direction: column;
     }
 
+    .hero{
+        width: 700px;
+        max-width: 700px;
+        min-height: 200px;
+        max-height: 700px;
+    }
+
+    .btn{
+        text-align: center;
+    }
+
     nav{
         display: grid;
        
+    }
+
+    .content{
+        margin-right: auto;
     }
     
     h1{
