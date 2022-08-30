@@ -346,9 +346,9 @@ footer p:nth-child(2){
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1078px){
 
-    html,body {
+    body {
         margin: 0;
         padding: 0;
        
