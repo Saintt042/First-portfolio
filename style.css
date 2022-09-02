@@ -4,26 +4,28 @@
     --card-color: #191919;
 }
 
-
-
-
-
 *{
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
    box-sizing: border-box;
 }
-.container{
-    border-radius: 25px;
+html{
+    width:100%;
 }
-
+body{
+    width:100%;
+}
+.container{
+    width:100%;
+}
 .hero{
     height: 100vh;
     width: 100%;
     background-image: url(./images/SAM_3287.JPG);
-    background-size: cover;
-    background-position: center;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
 }
 
 nav{
@@ -48,7 +50,7 @@ span{
 
 nav ul li{
     list-style-type: none;
-    display: inline-block;
+    display:inline-block;
     padding: 10px 25px;
 }
 
@@ -89,13 +91,12 @@ nav ul li a:hover{
 
 h1{
     color: var(--white-smoke);
-    margin: 20px 0 20px;
     font-size: 65px;
 }
 h3{
     color: var(--white-smoke);
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 h4{
     color: #fcfc;
@@ -105,7 +106,6 @@ h4{
 
 .newsletter form{
     width: 380px;
-    max-width: 100%;
     position: relative;
 }
 .newsletter form input:first-child{
@@ -136,28 +136,29 @@ h4{
 
 .about{
     width: 100%;
-    padding: 100px 100px;
+    padding: 100px 30px;
     background-image: url(./images/photo.jpeg);
+    background-size: 100% 100%;
     
+}
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .about img{
     height: auto;
-    width: 430px;
+    width: 40%;
+    margin:auto;
     border-radius: 25px;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
 }
 .about-text{
-    width: 550px;
+    width: 50%;
+    text-align:center;
 }
 
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .about-text h2{
     color: var(--white-smoke);
@@ -204,7 +205,7 @@ button:hover{
 .title h2{
     color: var(--white-smoke);
     font-size: 75px;
-    width: 1130px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
 }
@@ -269,11 +270,12 @@ h5{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .contact-me p{
     color: var(--white-smoke);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -313,7 +315,7 @@ footer p:nth-child(1){
 footer p:nth-child(2){
     color: var(--white-smoke);
     font-size: 17px; 
-    width: 500px;
+    width: 100%;
     text-align: center;
     line-height: 26px;
 }
@@ -346,20 +348,55 @@ footer p:nth-child(2){
     font-size: 14px;
 }
 
-@media screen and (max-width: 1078px){
+@media screen and (max-width: 600px){
 
     body {
         margin: 0;
         padding: 0;
-       
         }
 
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        position:relative;
 
-    .hero{
-        width: 700px;
-        max-width: 700px;
-        min-height: 200px;
-        max-height: 700px;
+    }
+    nav ul{
+        position:absolute;
+        top:60px;
+        left:0;
+    }
+    nav ul li{
+        list-style-type: none;
+        display:block;
+        padding: 5px 25px;
+    }
+    .content{
+        top: 55%;
+        left: 5%;
+    }
+    .newsletter form{
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about img{
+        height: auto;
+        width: 100%;
+        margin:auto;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    }
+    .about-text{
+        width: 100%;
+        text-align:center;
     }
 
     .title h2{
@@ -370,35 +407,23 @@ footer p:nth-child(2){
         font-size: 15px;
     }
 
+    .box{
+        display: flex;
+        flex-direction: column; 
+    }
+    .card{
+        width:80%;
+    }
+    
+
     .btn{
         text-align: center;
-    }
-
-    nav{
-        display: grid;  
     }
 
     h1{
         font-size: 30px;   
     }
 
-
-.main{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.service{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.box{
-    display: flex;
-    flex-direction: column; 
-}
 
 .contact-me{
     display: flex;   
