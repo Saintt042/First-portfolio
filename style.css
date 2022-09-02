@@ -5,6 +5,7 @@
 }
 
 
+
 *{
     padding: 0;
     margin: 0;
@@ -20,13 +21,24 @@ html{
 body{
     width : 100%;
 }
-
+html{
+    width:100%;
+}
+body{
+    width:100%;
+}
+.container{
+    width:100%;
+}
 .hero{
     min-height: 100vh;
     width: 100%;
     background-image: url(./images/SAM_3287.JPG);
     background-size: 100% 100%;
     background-position: center;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
 }
 
 nav{
@@ -37,19 +49,6 @@ nav{
     padding-left: 8%;
     padding-right: 8%;
 }
-
-/* 
-nav{
-    display: grid;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-     
-} */
 
 .logo{
     color: var(--white-smoke);
@@ -64,7 +63,7 @@ span{
 
 nav ul li{
     list-style-type: none;
-    display: inline-block;
+    display:inline-block;
     padding: 10px 25px;
 }
 
@@ -105,13 +104,12 @@ nav ul li a:hover{
 
 h1{
     color: var(--white-smoke);
-    margin: 20px 0 20px;
     font-size: 65px;
 }
 h3{
     color: var(--white-smoke);
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 h4{
     color: #fcfc;
@@ -121,7 +119,6 @@ h4{
 
 .newsletter form{
     width: 380px;
-    max-width: 100%;
     position: relative;
 }
 .newsletter form input:first-child{
@@ -152,20 +149,30 @@ h4{
 
 .about{
     width: 100%;
-    padding: 100px 100px;
+    padding: 100px 30px;
     background-image: url(./images/photo.jpeg);
+
     background-size: 100%;
 }
 
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .about img{
     height: auto;
-    width: 430px;
+    width: 40%;
+    margin:auto;
     border-radius: 25px;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
 }
 .about-text{
-    width: 550px;
+    width: 50%;
+    text-align:center;
 }
+
 
 .main{
     width: 1130px;
@@ -220,7 +227,7 @@ button:hover{
 .title h2{
     color: var(--white-smoke);
     font-size: 75px;
-    width: 1130px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
 }
@@ -231,7 +238,7 @@ button:hover{
     min-height: 400px;
 }
 .card{
-    height: 365px;
+    height: 400px;
     width: 335px;
     padding: 20px 35px;
     background: var(--card-color);
@@ -241,6 +248,7 @@ button:hover{
     overflow: hidden;
     text-align: center;
 }
+
 .card i{
     font-size: 50px;
     display: block;
@@ -254,6 +262,7 @@ h5{
     font-size: 23px;
     margin-bottom: 15px;
 }
+
 .pra p{
     color: var(--white-smoke);
     font-size: 16px;
@@ -285,11 +294,12 @@ h5{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .contact-me p{
     color: var(--white-smoke);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -304,6 +314,7 @@ h5{
     border-radius: 30px;
     transition: .4s;
 }
+
 .contact-me .button-two:hover{
     background-color: transparent;
     border: 2px solid var(--bright-pink);
@@ -320,16 +331,18 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
 footer p:nth-child(1){
     font-size: 30px;
     color: var(--white-smoke);
     margin-bottom: 20px;
     font-weight: bold;
 }
+
 footer p:nth-child(2){
     color: var(--white-smoke);
     font-size: 17px; 
-    width: 500px;
+    width: 100%;
     text-align: center;
     line-height: 26px;
 }
@@ -337,6 +350,7 @@ footer p:nth-child(2){
 .social{
     display: flex;
 }
+
 .social a{
     width: 45px;
     height: 45px;
@@ -362,29 +376,55 @@ footer p:nth-child(2){
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 300px){
+
+@media screen and (max-width: 600px){
+body {
+     margin: 0;
+     padding: 0;
+}
 
 .hero{
-     width:100%;
-     height: 100vh;
-     background-repeat: no-repeat;
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 
-.title h2{
-    font-size: 60px;
-}
-    
-.btn{
-    font-weight: bold;
-    border-radius: 50px;
-    transition: transform .4s;
-    text-align: center;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position:relative;
 }
 
+nav ul{
+    position:absolute;
+    top:60px;
+    left:0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display:block;
+    padding: 5px 25px;
+}
+
+.content{
+    top: 55%;
+    left: 5%;
+}
+
+.newsletter form{
+    width: 100%;
+}
 
 .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    margin: auto;
 }
 
 .about{
@@ -394,74 +434,43 @@ footer p:nth-child(2){
 .about img{
     height: auto;
     width: 100%;
+    margin:auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
 }
+
 
 .about-text{
     width: 100%;
+    text-align:center;
 }
 
- nav{
-    justify-content: flex-end;
-    align-content: flex-end;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-     
+.title h2{
+    font-size: 60px;
 }
 
-nav ul{
-    position: absolute;
-    top: 50px;
-}
-    
-nav li a:hover {
-    background-color: var(--card-color);
-    padding:3px 5px;
-    color: var(--bright-pink);
-    border: 1px dotted var(--bright-pink);
-    border-radius: 10px;
-}
-    
-nav ul li{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-
-.newsletter form{
-    width: 100%;
-}
-
-
-h1{
-    font-size: 30px;
-}
-
-
-.main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.service{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-text p{
+    font-size: 15px;
 }
 
 .box{
     display: flex;
     flex-direction: column; 
 }
+.card{
+    width:80%;
+}
+
+
+.btn{
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;   
+}
 
 .contact-me{
     display: flex;
 }
-
 }
