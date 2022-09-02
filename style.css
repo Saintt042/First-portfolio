@@ -401,9 +401,7 @@ footer p:nth-child(2){
     }
 
     .title h2{
-      
-        font-size: 55px;
-       
+        font-size: 50px;
     }
 
     .main{
@@ -468,6 +466,10 @@ h2{
         width: 100%;
         text-align:center;
     }
+    
+.about-text h2{
+  font-size: 50px;
+}
 
 .newsletter form{
     width: 100%;
