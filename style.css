@@ -421,6 +421,39 @@ footer p:nth-child(2){
     width:80%;
 }
 
+    nav ul{
+        position:absolute;
+        top:60px;
+        left:0;
+    }
+    nav ul li{
+        list-style-type: none;
+        display:block;
+        padding: 5px 25px;
+    }
+    .content{
+        top: 55%;
+        left: 5%;
+    }
+    .newsletter form{
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about img{
+        height: auto;
+        width: 100%;
+        margin:auto;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    }
+    .about-text{
+        width: 100%;
+        text-align:center;
+    }
 
 .newsletter form{
     width: 100%;
