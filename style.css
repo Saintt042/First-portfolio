@@ -4,11 +4,12 @@
     --card-color: #191919;
 }
 
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 html{
     width:100%;
@@ -20,8 +21,9 @@ body{
 .container{
     width:100%;
 }
+
 .hero{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(./images/SAM_3287.JPG);
     background-size:100% 100%;
@@ -140,14 +142,15 @@ h4{
     padding: 100px 30px;
     background-image: url(./images/photo.jpeg);
     background-size: 100% 100%;
-    
 }
+
 .main{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .about img{
     height: auto;
     width: 40%;
@@ -225,6 +228,7 @@ button:hover{
     position: relative;
     text-align: center;
 }
+
 .card i{
     font-size: 50px;
     display: block;
@@ -238,6 +242,7 @@ h5{
     font-size: 23px;
     margin-bottom: 15px;
 }
+
 .pra p{
     color: var(--white-smoke);
     font-size: 16px;
@@ -289,6 +294,7 @@ h5{
     border-radius: 30px;
     transition: .4s;
 }
+
 .contact-me .button-two:hover{
     background-color: transparent;
     border: 2px solid var(--bright-pink);
@@ -306,12 +312,14 @@ footer{
     justify-content: center;
     text-align: center;
 }
+
 footer p:nth-child(1){
     font-size: 30px;
     color: var(--white-smoke);
     margin-bottom: 20px;
     font-weight: bold;
 }
+
 footer p:nth-child(2){
     color: var(--white-smoke);
     font-size: 17px; 
@@ -323,6 +331,7 @@ footer p:nth-child(2){
 .social{
     display: flex;
 }
+
 .social a{
     width: 45px;
     height: 45px;
@@ -363,7 +372,6 @@ footer p:nth-child(2){
         padding-left: 5%;
         padding-right: 5%;
         position:relative;
-
     }
     nav ul{
         position:absolute;
@@ -399,34 +407,11 @@ footer p:nth-child(2){
         text-align:center;
     }
 
-    .title h2{
-        font-size: 60px;
-    }
-
-    .about-text p{
-        font-size: 15px;
-    }
-
-    .box{
-        display: flex;
-        flex-direction: column; 
-    }
-    .card{
-        width:80%;
-    }
-    
-
-    .btn{
-        text-align: center;
-    }
-
-    h1{
-        font-size: 30px;   
-    }
-
-
-.contact-me{
-    display: flex;   
+.newsletter form{
+    width: 100%;
 }
 
+.contact-me{
+    display: flex;
+}
 }
