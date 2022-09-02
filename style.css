@@ -4,12 +4,16 @@
     --card-color: #191919;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
 *{
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+<<<<<<< HEAD
     box-sizing: border-box;
 }
 
@@ -30,12 +34,28 @@ body{
 .container{
     width:100%;
 }
+=======
+   box-sizing: border-box;
+}
+html{
+    width:100%;
+}
+body{
+    width:100%;
+}
+.container{
+    width:100%;
+}
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
 .hero{
     min-height: 100vh;
     width: 100%;
     background-image: url(./images/SAM_3287.JPG);
+<<<<<<< HEAD
     background-size: 100% 100%;
     background-position: center;
+=======
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
     background-size:100% 100%;
     background-repeat:no-repeat;
     background-position:center;
@@ -151,10 +171,21 @@ h4{
     width: 100%;
     padding: 100px 30px;
     background-image: url(./images/photo.jpeg);
+<<<<<<< HEAD
 
     background-size: 100%;
 }
 
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+=======
+    background-size: 100% 100%;
+    
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
+}
 .main{
     width: 100%;
     display: flex;
@@ -173,6 +204,7 @@ h4{
     text-align:center;
 }
 
+<<<<<<< HEAD
 
 .main{
     width: 1130px;
@@ -181,6 +213,8 @@ h4{
     align-items: center;
     justify-content: space-around;
 }
+=======
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
 
 .about-text h2{
     color: var(--white-smoke);
@@ -376,6 +410,7 @@ footer p:nth-child(2){
     font-size: 14px;
 }
 
+<<<<<<< HEAD
 
 @media screen and (max-width: 600px){
 body {
@@ -398,6 +433,58 @@ nav{
     padding-right: 5%;
     position:relative;
 }
+=======
+@media screen and (max-width: 600px){
+
+    body {
+        margin: 0;
+        padding: 0;
+        }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        position:relative;
+
+    }
+    nav ul{
+        position:absolute;
+        top:60px;
+        left:0;
+    }
+    nav ul li{
+        list-style-type: none;
+        display:block;
+        padding: 5px 25px;
+    }
+    .content{
+        top: 55%;
+        left: 5%;
+    }
+    .newsletter form{
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about img{
+        height: auto;
+        width: 100%;
+        margin:auto;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    }
+    .about-text{
+        width: 100%;
+        text-align:center;
+    }
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
 
 nav ul{
     position:absolute;
@@ -411,15 +498,35 @@ nav ul li{
     padding: 5px 25px;
 }
 
+<<<<<<< HEAD
 .content{
     top: 55%;
     left: 5%;
 }
+=======
+    .box{
+        display: flex;
+        flex-direction: column; 
+    }
+    .card{
+        width:80%;
+    }
+    
+
+    .btn{
+        text-align: center;
+    }
+
+    h1{
+        font-size: 30px;   
+    }
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
 
 .newsletter form{
     width: 100%;
 }
 
+<<<<<<< HEAD
 .main{
     display: flex;
     flex-direction: column;
@@ -470,6 +577,8 @@ h1{
     font-size: 30px;   
 }
 
+=======
+>>>>>>> 5ab4159ccc3a0332ef247de6d0afea910c09d9a7
 .contact-me{
     display: flex;
 }
